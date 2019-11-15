@@ -9,7 +9,7 @@ class App extends Component {
 			<div className='App'>
 				<Route
 					path='/food/:name'
-					render={routeProps => <Food name={routeProps.match.params.name} />}
+					render={routeProps => <Food {...routeProps} />}
 				/>
 			</div>
 		);
