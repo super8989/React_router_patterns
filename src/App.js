@@ -7,10 +7,11 @@ class App extends Component {
 	render() {
 		return (
 			<div className='App'>
-				<Route
+				{/* <Route
 					path='/food/:name'
 					render={routeProps => <Food {...routeProps} />}
-				/>
+				/> */}
+				<Route path='/food/:name' component={Food} />
 			</div>
 		);
 	}
