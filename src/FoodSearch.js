@@ -9,7 +9,7 @@ class FoodSearch extends Component {
 	}
 
 	handleChange(evt) {
-		this.setState({ query: evt.target.value });
+		this.setState({ query: evt.target.value }); //[evt.target.name] : evt.target.value
 	}
 
 	render() {
