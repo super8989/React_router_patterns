@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class FoodSearch extends Component {
 	constructor(props) {
@@ -21,6 +22,7 @@ class FoodSearch extends Component {
 					value={this.query}
 					onChange={this.handleChange}
 				/>
+				<Link to={`/food/${this.state.query}`}>Go!</Link>
 			</div>
 		);
 	}
