@@ -17,7 +17,7 @@ class FoodSearch extends Component {
 		//Do something
 		alert("Saved Your Food to DB");
 		//redirect somewhere else
-		this.props.history.push("/");
+		this.props.history.push(`/food/${this.state.query}`);
 	}
 
 	render() {
