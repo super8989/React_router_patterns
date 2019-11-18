@@ -21,11 +21,12 @@ class App extends Component {
 						path='/food/:foodName/drink/:drinkName'
 						component={Meal}
 					/>
-					<Route
+					{/* <Route
 						exact
 						path='/'
 						render={routeProps => <FoodSearch {...routeProps} />}
-					/>
+					/> */}
+					<Route exact path='/' component={FoodSearch} />
 					<Route render={() => <h1>Error Not Found</h1>} />
 				</Switch>
 			</div>
