@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { withRouter } from "react-router-dom";
+import "./Navbar.css";
 
 class Navbar extends Component {
 	constructor(props) {
@@ -13,11 +15,11 @@ class Navbar extends Component {
 
 	render() {
 		return (
-			<div>
+			<div className='Navbar'>
 				<button onClick={this.handleLogin}>Log in</button>
 			</div>
 		);
 	}
 }
 
-export default Navbar;
+export default withRouter(Navbar);
